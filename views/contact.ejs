@@ -1,0 +1,16 @@
+<h1>ini adalah halaman contact</h1>
+<p>menggunakan bootstrap cdn</p>
+<h4>contact name: <%= nama%> age: <%= age %></h4>
+
+<h4>Data Mahasiswa</h4>
+<% if (mhs.length < 1) { %>
+<p>Data mahasiswa masih kosong.</p>
+<% } %>
+<ul>
+    <% mhs.forEach(mhs => { %>
+    <ul>
+        <li style="color: coral">Nama: <%= mhs.nama %></li>
+        <li>Email: <%= mhs.email %></li>
+    </ul>
+    <% }) %>
+</ul>
